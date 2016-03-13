@@ -13,9 +13,13 @@
     <!--Controllers-->
     <script src="site/controllers/admin.ctrl.js"></script>
     <script src="site/controllers/main.ctrl.js"></script>
+    <!--Services-->
+    <script src="site/services/api.srv.js"></script>
 </head>
 <body ng-app="platform">
-    <div ui-view></div>
+    <div ui-view name='header'></div>
+    <div ui-view name='layout'></div>
+    <div ui-view name='footer'></div>
 
 </body>
 </html>

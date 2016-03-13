@@ -1,0 +1,35 @@
+<ul class="pull-right">
+    <a class="btn btn-info
+             " href="page.php">Create Page</a>
+    <a class="btn btn-warning
+              " href="upload_logo.php">Upload Logo</a>
+    <a class="btn btn-success
+              " href="admin_list.php">Edit Admin</a>
+</ul>
+
+<ul class="pull-left">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="site_name">Website Name</label>
+            <input class="form-control input-lg" ng-model="ctrl.siteName" required="">
+        </div>
+        <input type="submit" value="Save" class="btn btn-primary" ng-click="ctrl.logSiteName()">
+    </form>
+</ul>
+<table class="table
+">
+    <tbody>
+        <tr>
+            <th>Page Title</th>
+            <th>Page Author</th>
+        </tr>
+        <tr>
+            <td>Home</td>
+            <td>Contact Information or Page Author.</td>
+            <td><a href="">View</a></td>
+            <td><a href="">Edit</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<div ng-include src="'site/partials/common/footer.html'"></div>
